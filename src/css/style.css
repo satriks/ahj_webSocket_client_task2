@@ -1,0 +1,110 @@
+
+body {
+  color: #520909d1;
+}
+.hidden {
+  display: none;
+}
+
+
+.workstation{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 70vh;
+}
+
+.workstation__control{
+  width: 45%;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+h2{
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic
+
+}
+
+.workstation__log{
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.control__tasks{
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.log__info{
+  margin-top: 30px;
+  height: 300px;
+  overflow-y: scroll;
+  
+}
+.control__add{
+  margin-top: 10px;
+  align-self: center;
+  text-decoration: underline;
+}
+
+.task{
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.status{
+  position: relative;
+  margin-left: 60px;
+}
+
+.status-stop::before{
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.status-start::before{
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: green;
+}
+
+button{
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff00;
+  cursor: pointer;
+}
+
+.task__start{
+  background-color: lightgreen;
+}
+
+.task__stop{
+  background-color: lightcoral;
+}
+.lod__title{
+  margin-top: 10px;
+}
