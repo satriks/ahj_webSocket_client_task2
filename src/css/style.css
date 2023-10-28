@@ -47,12 +47,31 @@ h2{
   margin-top: 30px;
   height: 300px;
   overflow-y: scroll;
-  
 }
+
+.log{
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.log__time{
+  margin-bottom: 5px;
+}
+
+
+.log__title-id, .log__status-info{
+  padding-left: 5px;
+}
+
+
+  
+
 .control__add{
   margin-top: 10px;
   align-self: center;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .task{
@@ -64,12 +83,19 @@ h2{
   border: 1px solid black;
   border-radius: 10px;
 }
+
+.task__control{
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
 .status{
   position: relative;
   margin-left: 60px;
+  text-transform: capitalize;
 }
 
-.status-stop::before{
+.status-stop::after{
   content: "";
   position: absolute;
   left: -40px;
@@ -80,7 +106,7 @@ h2{
   background-color: black;
 }
 
-.status-start::before{
+.status-start::after{
   content: "";
   position: absolute;
   left: -40px;
@@ -102,9 +128,10 @@ button{
   background-color: lightgreen;
 }
 
-.task__stop{
+.task__del{
   background-color: lightcoral;
 }
+
 .lod__title{
   margin-top: 10px;
 }
